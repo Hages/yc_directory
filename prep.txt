@@ -1,0 +1,42 @@
+cd yc_directory
+
+npx create-next-app@latest ./
+
+npm install next-auth@beta
+npx auth secret
+
+npm install tailwindcss-animate
+npm install @tailwindcss/typography
+
+npx shadcn@latest init
+npx shadcn@latest add button
+
+npm create sanity@latest -- --project k7hov21g --dataset production --template clean --typescript --output-path studio-jsm-yc-directory
+npm install next-sanity@latest 
+(copy studio-jsm-yc-directory/.env.local contents to ./.env.local file)
+
+npm install sanity-plugin-markdown 
+
+npx sanity@latest schema extract --path=./sanity/extract.json
+npx sanity@latest typegen generate
+
+npm i server-only
+
+npm install markdown-it
+npm i --save-dev @types/markdown-it
+
+npx shadcn@latest add skeleton
+
+npx shadcn@latest add input textarea sonner
+
+npm i @uiw/react-md-editor
+
+npm install --save react-is
+
+npm install slugify
+
+npx @sentry/wizard@latest -i nextjs --saas --org just-devign --project yc-directory
+or
+npm install @sentry/nextjs --save
+
+npx shadcn@latest add avatar
